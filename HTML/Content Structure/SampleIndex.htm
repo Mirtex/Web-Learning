@@ -17,44 +17,48 @@
 
     <h2>HTML learning documents: </h2>
     <nav role="navigation">
-      <p><a href="../Basics/basics.htm" title="Basics document">Basics document<a><br>
-      <a href="../Basics/FormattingBasics.htm">Formatting Basics document<a><br>
-      <a href="../Basics/HeadingBasics.htm" title="Heading Basics document">Heading Basics document<a><br>
-      <a href="../Basics/ImageBasics.htm" title="Image Basics document">Image Basics document<a><br>
-      <a href="../Basics/SpecialCharacters.htm" title="Special Characters document">Special Characters<a><br>
-      <a href="../Intermediate/Links.htm" title="Links sample document">Links Document</a></p>
+      <ol type="1">
+        <li> <a href="../Basics/basics.htm" title="Basics document">Basics document<a><br></li>
+        <li> <a href="../Basics/FormattingBasics.htm">Formatting Basics document<a><br></li>
+        <li> <a href="../Basics/HeadingBasics.htm" title="Heading Basics document">Heading Basics document<a><br></li>
+        <li> <a href="../Basics/ImageBasics.htm" title="Image Basics document">Image Basics document<a><br></li>
+        <li> <a href="../Basics/SpecialCharacters.htm" title="Special Characters document">Special Characters<a><br></li>
+        <li> <a href="../Intermediate/Links.htm" title="Links sample document">Links Document</a></li>
+      </ol>
     </nav>
 
     <main role="main">
     <article role="article">
+      <ol>
+
       <section>
         <h3>Content summary:</h3>
-          <h4>Basics Document:</h4>
+          <li><h4>Basics Document:</h4></li>
           <p>This document contains the first learning experience with html, including simple formatting, headers <br> and
           general HTML document structure implementation (doctype, head, body, meta, etc.)</p>
       </section>
 
       <section>
-        <h4>Formatting Basics</h4>
+        <li><h4>Formatting Basics</h4></li>
         <p>This is a continued document with more in depth formatting of html documents. This content includes <br>
         basic formatting, pre-formatted text, headings, emphasis, etc.</p>
       </section>
 
       <section>
-        <h4>Heading Basics</h4>
+        <li><h4>Heading Basics</h4></li>
         <p>This document was a testing ground for proper heading usage and implementation. It contains both samples <br>
         and information of the implementation as well as some testing around with HTML rules. Finally, the first usage of <br>
         links was implemented to provide citation to helpful websites.</p>
       </section>
 
       <section>
-        <h4>Image Basics</h4>
+        <li><h4>Image Basics</h4></li>
         <p>Within this document you can find the testing ground used to add images to an HTML file. <br>
         This was a simple test, adding an image and manipulating its size.</p>
       </section>
 
       <section>
-        <h4>Special Characters</h4>
+        <li><h4>Special Characters</h4></li>
         <p>This document was used to test exactly that, special characters, given that some characters (like &lt; and &gt; <br>
           especially) are part of HTML syntax. Some explanation of usage and recommendations are given.</p>
 
@@ -68,10 +72,11 @@
       </section>
 
       <section>
-        <h4>Links</h4>
+        <li><h4>Links</h4></li>
         <p>This document is the testing ground for the implementation of links. This includes internal and external pages, <br>
         downloads, and modifications to provide specific results as the final presentation of the information. <br></p>
       </section>
+    </ol>
 
       <section id="ContStruct">
         <header>
@@ -80,49 +85,74 @@
         </header>
 
         <p>This document contains the following content structure tags implemented: </p>
+      <dl>
+
         <div class="structTag">
-          <h4>&lt;nav&gt; tag</h4>
-          <p>This tag was used to mark the html document navigation.</p>
+          <dt><h4>&lt;nav&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the html document navigation.</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;article&gt; tag</h4>
-          <p>This tag was used to mark the main article section of this specific document.</p>
+          <dt><h4>&lt;article&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the main article section of this specific document.</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;section&gt; tag</h4>
-          <p>This tag was used to separated the descriptions of each html file.</p>
+          <dt><h4>&lt;section&gt; tag</h4></dt>
+          <dd><p>This tag was used to separated the descriptions of each html file.</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;aside&gt; tag</h4>
-          <p>This tag was used to mark the Special character notes given that is tangential information.</p>
+          <dt><h4>&lt;aside&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the Special character notes given that is tangential information.</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;div&gt; tag</h4>
-          <p>This tag was used in this section, to tag each individual piece. There might be better tags for this however. <br>
-          In this case I am grouping them together due to future - fictional -  CSS usage (As stated above, this is HTML only.)</p>
+          <dt><h4>&lt;div&gt; tag</h4></dt>
+          <dd><p>This tag was used in this section, to tag each individual piece. There might be better tags for this however. <br>
+          In this case I am grouping them together due to future - fictional -  CSS usage (As stated above, this is HTML only.)</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;header&gt; tag</h4>
-          <p>This tag was used to mark the header of the body.</p>
+          <dt><h4>&lt;header&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the header of the body.</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;footer&gt; tag</h4>
-          <p>This tag was used to mark the footer of this page, which containes personal information about <br>
-            the creator of these documents.</p>
+          <dt><h4>&lt;footer&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the footer of this page, which containes personal information about <br>
+            the creator of these documents.</p></dd>
         </div>
 
         <div class="structTag">
-          <h4>&lt;main&gt; tag</h4>
-          <p>This tag was used to mark the main section of this document, which is simply the article. <br>
+          <dt><h4>&lt;main&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the main section of this document, which is simply the article. <br>
             This tag is used primarily of assistive devices, which is why it's important, even if it's being <br>
-            overlayed around the article tag.</p>
+            overlayed around the article tag.</p></dd>
         </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;ol&gt; tag</h4></dt>
+          <dd><p>This is the Ordered list tag, used to relate links to their respective comments.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><s><h4>&lt;ul&gt; tag</h4></s></dt>
+          <dd><p>This is the Unordered list tag, <s>used to give accent to each tag description in this section</s>. This tag was removed <br>
+          from this file because it was not used correctly (a Description list is more appropriate.)</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;li&gt; tag</h4></dt>
+          <dd><p>This is the List Item tag, it is required in both ordered and unordered lists to mark content as a list item.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;dl&gt; tag</h4></dt>
+          <dd><p>This is the Description List tag, it was used to replace &lt;li&gt; in this section because it is more appropriate. <br>
+          This tag is accompanied by the <strong>&lt;dt&gt; and the &lt;dd&gt; tags</strong> to mark List terms and descriptions, respectively.</p></dd>
+        </div>
+      </dl>
 
       </section>
     </article>
