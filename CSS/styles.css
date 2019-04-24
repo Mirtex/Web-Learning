@@ -1,67 +1,77 @@
 html
-        {
-            background-color: #AAAAAA;
-        }
-        
-        h1
-        {
-            font-family: Calibri, "Courier New", serif;
-            font-size: 2.5em;
-            font-weight: normal;
-            font-style: normal;
-            margin: 0.5em 1em auto;
-            background: lightcyan; /* Foreground color is inlined for testing purposes and is called "color" */
-        }
-        
-        h2
-        {
-            color:darkmagenta;
-            font-family: Calibri, "Courier New", serif;
-            font-size: 1.6em;
-            font-weight: normal;
-            font-style: normal;
-            margin: 0.5em;
-        }
-        
-        h3
-        {
-            color:darkcyan;
-            font-family: "Calibri", "Courier New", serif;
-            font-weight: bold;
-            margin:  2em 2em 0.5em;
-        }
-        
-        h4
-        {
-            color:darkblue;
-            font-family: "Calibri", "Courier New", serif;
-            font-weight: normal;
-            margin-left: 1em;
+{
+    background-color: #AAAAAA;
+}
+body
+{
+    font: 100% "Bahnschrift Light","Century Gothic",serif;
+    width: 85%;
+    margin: auto;
+    background: #F0FFFF;
+    border-left: 5px solid darkcyan;
+    border-right: 5px solid darkcyan;
+}
+h1
+{
+    font-family: Calibri, "Courier New", serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0.5em 1em auto;
+    background: lightcyan; /* Foreground color is inlined for testing purposes and is called "color" */
+}
 
-        }
-        
-        p
-        {
-            font-family: "Bahnschrift Light","Century Gothic",serif;
-            font-size: 0.9em;
-            line-height: 1.5;
-            text-align: justify;
-            width: auto;
-            margin: 1em 2em 0.5em;
-        }
-        
-        body
-        {
-            font: 100% "Bahnschrift Light","Century Gothic",serif;
-            width: 85%;
-            margin: auto;
-            background: #F0FFFF;
-            border-left: 5px solid darkcyan;
-            border-right: 5px solid darkcyan;
+h2
+{
+    color:darkmagenta;
+    font-family: Calibri, "Courier New", serif;
+    font-size: 1.6em;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0.5em;
+}
 
-        }
-        
-        footer
-        {
-            margin-top: 2em;
-        }
+h3
+{
+    color:darkcyan;
+    font-family: "Calibri", "Courier New", serif;
+    font-weight: bold;
+    margin:  2em 2em 0.5em;
+}
+
+h4
+{
+    color:darkblue;
+    font-family: "Calibri", "Courier New", serif;
+    font-weight: normal;
+    margin-left: 1em;
+}
+
+p
+{
+    font-family: "Bahnschrift Light","Century Gothic",serif;
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: justify;
+    width: auto;
+    margin: 1em 2em 0.5em;
+}
+
+
+footer
+{
+    margin-top: 2em;
+}
+
+a
+{
+    text-decoration:none;
+    color:darkblue;
+    font-weight: bold;
+}
+
+a:hover
+{
+    text-decoration: underline;
+    color:dodgerblue;
+}
