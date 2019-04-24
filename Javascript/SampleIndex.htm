@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Samples Index page</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <header role="banner">
+      <h1 style="color:darkcyan;">&nbsp;&nbsp; Index</h1>
+      <p>This html file is meant to be used as an entry point to the rest of the files
+      as well as a learning experience for me. This file is <b>also</b> meant
+      to be the sample document for content structuring, given its nature. Even though these files were done in par
+      with a tutorial, <em>they are original</em>, without copied content whatsoever (this includes images.)</p>
+      <p><i>Note: To try this out, the full HTML folder is required (All links are local.)</i></p>
+    </header>
+
+
+    <h2>HTML learning documents: </h2>
+    <nav role="navigation">
+      <ol type="1" id="pageTabs">
+          <li id="basicsTab"> <a href="./HTML Files/basics.htm" title="Basics document">Basics document</a> </li>
+          <li id="formatTab"> <a href="./HTML Files/FormattingBasics.htm">Formatting Basics document</a> </li>
+          <li id="headingTab"> <a href="./HTML Files/HeadingBasics.htm" title="Heading Basics document">Heading Basics document</a> </li>
+          <li id="imageTab"> <a href="./HTML Files/ImageBasics.htm" title="Image Basics document">Image Basics document</a> </li>
+          <li id="specialTab"> <a href="./HTML Files/SpecialCharacters.htm" title="Special Characters document">Special Characters</a> </li>
+          <li id="linksTab"> <a href="./Link Files/Links.htm" title="Links sample document">Links Document</a></li>
+      </ol>
+    </nav>
+
+    <main role="main">
+    <article role="article">
+        
+        <div id="tabs">
+            <li id="tab1"> <a href="#tabPanel1">Basics</a> </li>
+            <li id="tab2"> <a href="#tabPanel2">Formatting</a> </li>
+            <li id="tab3"> <a href="#tabPanel3">Heading</a> </li>
+            <li id="tab4"> <a href="#tabPanel4">Images</a> </li>
+            <li id="tab5"> <a href="#tabPanel5">Special Chars</a> </li>
+            <li id="tab6"> <a href="#tabPanel6">Links</a> </li>
+       </div>
+
+        <h3>Content summary:</h3>
+
+    <ol id=containers>
+      <section id="tabPanel1">
+          <li><h4>Basics Document:</h4></li>
+          <p>This document contains the first learning experience with html, including simple formatting, headers and
+          general HTML document structure implementation (doctype, head, body, meta, etc.)</p>
+      </section>
+
+      <section id="tabPanel2">
+        <li value="2"><h4>Formatting Basics</h4></li>
+        <p>This is a continued document with more in depth formatting of html documents. This content includes basic formatting, pre-formatted text, headings, emphasis, etc.</p>
+      </section>
+
+      <section id="tabPanel3">
+        <li value="3"><h4>Heading Basics</h4></li>
+        <p>This document was a testing ground for proper heading usage and implementation. It contains both samples and information of the implementation as well as some testing around with HTML rules. Finally, the first usage of links was implemented to provide citation to helpful websites.</p>
+      </section>
+
+      <section id="tabPanel4">
+        <li value="4"><h4>Image Basics</h4></li>
+        <p>Within this document you can find the testing ground used to add images to an HTML file. This was a simple test, adding an image and manipulating its size.</p>
+      </section>
+
+      <section id="tabPanel5">
+        <li value="5"><h4>Special Characters</h4></li>
+        <p>This document was used to test exactly that, special characters, given that some characters (like &lt; and &gt; especially) are part of HTML syntax. Some explanation of usage and recommendations are given.</p>
+
+        <aside role="complementary">
+          <p><b>Special Characters document notes:</b><br>
+          This document contains a note section that mentions CSS. Even though CSS is part of my learning experiecne it is not implemented throughout the HTML learning experience file <strong> on purpose</strong>and will be implemented in its own separate file.</p>
+        </aside>
+      </section>
+
+      <section id="tabPanel6">
+        <li value="6"><h4>Links</h4></li>
+        <p>This document is the testing ground for the implementation of links. This includes internal and external pages, downloads, and modifications to provide specific results as the final presentation of the information.</p>
+      </section>
+    </ol>
+
+      <section id="ContStruct">
+        <header>
+          <h3>Content structure implementations:</h3>
+          <p>The following section goes through the structure tags implemented in this document, which are the following: </p>
+        </header>
+
+      <dl>
+
+        <div class="structTag">
+          <dt><h4>&lt;nav&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the html document navigation.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;article&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the main article section of this specific document.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;section&gt; tag</h4></dt>
+          <dd><p>This tag was used to separated the descriptions of each html file.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;aside&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the Special character notes given that is tangential information.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;div&gt; tag</h4></dt>
+          <dd><p>This tag was used in this section, to tag each individual piece. There might be better tags for this however. In this case I am grouping them together due to future - fictional -  CSS usage (As stated above, this is HTML only.)</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;header&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the header of the body.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;footer&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the footer of this page, which containes personal information about the creator of these documents.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;main&gt; tag</h4></dt>
+          <dd><p>This tag was used to mark the main section of this document, which is simply the article. This tag is used primarily of assistive devices, which is why it's important, even if it's being overlayed around the article tag.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;ol&gt; tag</h4></dt>
+          <dd><p>This is the Ordered list tag, used to relate links to their respective comments.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><s><h4>&lt;ul&gt; tag</h4></s></dt>
+          <dd><p>This is the Unordered list tag, <s>used to give accent to each tag description in this section</s>. This tag was removed from this file because it was not used correctly (a Description list is more appropriate.)</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;li&gt; tag</h4></dt>
+          <dd><p>This is the List Item tag, it is required in both ordered and unordered lists to mark content as a list item.</p></dd>
+        </div>
+
+        <div class="structTag">
+          <dt><h4>&lt;dl&gt; tag</h4></dt>
+          <dd><p>This is the Description List tag, it was used to replace &lt;li&gt; in this section because it is more appropriate. This tag is accompanied by the <strong>&lt;dt&gt; and the &lt;dd&gt; tags</strong> to mark List terms and descriptions, respectively.</p></dd>
+        </div>
+      </dl>
+
+      </section>
+    </article>
+    </main>
+
+    <footer role="contentinfo">
+      <p><i>Made by: Ernesto A. Eusebio<br>
+        Game Development B.S., Full Sail University, 3.54, 2017<br>
+        erareu@gmail.com<br>
+        <a href="https://github.com/Mirtex">Github Repository</a><br>
+        <a href="https://docs.google.com/document/d/1LPXzUthVXr5KKypfPLCZq0pn-uAZsiVCImzoUm3vyIU/edit?usp=sharing" title="Ernesto Eusebio's Resume">Resume</a></i></p>
+    </footer>
+      
+      <script type="text/javascript">
+          
+          var tabLinks;
+          var tabPanels;
+        // This is my first javascript comment, same as C based languages.
+        window.onload = function()
+        {
+            tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+            
+            tabPanels = document.getElementById("containers").getElementsByTagName("section");
+            
+            //First one selected
+            displayPanel(tabLinks[0]);
+            
+            for(var i = 0; i < tabLinks.length; i++)
+            {
+                tabLinks[i].onclick = function()
+                {
+                    displayPanel(this);
+                    return false;
+                }
+                
+                tabLinks[i].onfocus = function()
+                {
+                    displayPanel(this);
+                    return false;
+                }
+            }
+        }
+        
+        function displayPanel(tabClicked)
+        {
+            for(var i = 0; i < tabLinks.length; i++)
+                {
+                    if(tabLinks[i] == tabClicked)
+                    {
+                        tabLinks[i].classList.add("active");
+                        tabPanels[i].style.display = "block";
+                    }
+                    else
+                    {
+                        tabLinks[i].classList.remove("active");
+                        tabPanels[i].style.display = "none";
+                    }
+                }
+        }
+          
+      </script>
+      
+  </body>
+</html>
