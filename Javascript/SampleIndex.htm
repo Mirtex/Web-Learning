@@ -30,7 +30,7 @@
 
     <main role="main">
     <article role="article">
-        
+
         <div id="tabs">
             <li id="tab1"> <a href="#tabPanel1">Basics</a> </li>
             <li id="tab2"> <a href="#tabPanel2">Formatting</a> </li>
@@ -160,55 +160,8 @@
         <a href="https://github.com/Mirtex">Github Repository</a><br>
         <a href="https://docs.google.com/document/d/1LPXzUthVXr5KKypfPLCZq0pn-uAZsiVCImzoUm3vyIU/edit?usp=sharing" title="Ernesto Eusebio's Resume">Resume</a></i></p>
     </footer>
-      
-      <script type="text/javascript">
-          
-          var tabLinks;
-          var tabPanels;
-        // This is my first javascript comment, same as C based languages.
-        window.onload = function()
-        {
-            tabLinks = document.getElementById("tabs").getElementsByTagName("li");
-            
-            tabPanels = document.getElementById("containers").getElementsByTagName("section");
-            
-            //First one selected
-            displayPanel(tabLinks[0]);
-            
-            for(var i = 0; i < tabLinks.length; i++)
-            {
-                tabLinks[i].onclick = function()
-                {
-                    displayPanel(this);
-                    return false;
-                }
-                
-                tabLinks[i].onfocus = function()
-                {
-                    displayPanel(this);
-                    return false;
-                }
-            }
-        }
-        
-        function displayPanel(tabClicked)
-        {
-            for(var i = 0; i < tabLinks.length; i++)
-                {
-                    if(tabLinks[i] == tabClicked)
-                    {
-                        tabLinks[i].classList.add("active");
-                        tabPanels[i].style.display = "block";
-                    }
-                    else
-                    {
-                        tabLinks[i].classList.remove("active");
-                        tabPanels[i].style.display = "none";
-                    }
-                }
-        }
-          
-      </script>
-      
+
+      <script src="Scripts/Tabs.js" type="text/javascript"></script>
+
   </body>
 </html>
