@@ -1,3 +1,11 @@
+
+/* RGB
+GreenDark:  background: #57A97A;
+GreenLime:  background: #84C318;
+GreenLight: background: #82D173;
+BlueBright: background: #00A5CF;
+BlueDarker: background: #004E64;  */
+
 html
 {
     background-color: #AAAAAA;
@@ -11,6 +19,10 @@ body
     border-left: 5px solid darkcyan;
     border-right: 5px solid darkcyan;
 }
+
+/* Headers and Footer
+---------------------------------------------------------------*/
+
 h1
 {
     font-family: Calibri, "Courier New", serif;
@@ -18,12 +30,13 @@ h1
     font-weight: normal;
     font-style: normal;
     margin: 0.5em 1em auto;
-    background: lightcyan; /* Foreground color is inlined for testing purposes and is called "color" */
+    background: #57A97A; /* Foreground color is inlined for testing purposes and is called "color" */
 }
 
 h2
 {
-    color:darkmagenta;
+    background: #84C318;
+    color:#004E64;
     font-family: Calibri, "Courier New", serif;
     font-size: 1.6em;
     font-weight: normal;
@@ -47,6 +60,14 @@ h4
     margin-left: 1em;
 }
 
+
+footer
+{
+    margin-top: 2em;
+}
+
+/* --------------------------------------------------------------------- */
+
 p
 {
     font-family: "Bahnschrift Light","Century Gothic",serif;
@@ -57,21 +78,15 @@ p
     margin: 1em 2em 0.5em;
 }
 
-
-footer
-{
-    margin-top: 2em;
-}
-
 a
 {
     text-decoration:none;
-    color:darkblue;
+    color:#004E64;
     font-weight: bold;
 }
 
 a:hover
 {
     text-decoration: underline;
-    color:dodgerblue;
+    color:#00A5CF;
 }
