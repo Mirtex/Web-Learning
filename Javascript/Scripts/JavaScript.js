@@ -95,13 +95,24 @@ var debug = (function()
     console.log("a - b = " + result);
 })()
 
+//Closure
+//Thanks to: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+function init() {
+  var name = 'Mozilla'; // name is a local variable created by init
+  function displayName() { // displayName() is the inner function, a closure
+    console.log("This closure is provided by:", name); // use variable declared in the parent function
+  }
+  displayName();
+}
+init();
+
 /* let & const
 *************************************/
 const MYCONSTANT = 1; //Constant
 let bsVar = 10;     //Block Scope Variable, to declare scope only, unlike in C++
 
 
-/* Objects
+/* Objects:: Classes
 ************************************/
 
 var account = new Object();
@@ -140,6 +151,75 @@ account.deposit(100)
 console.log("New Balance of Account1 is: " + account.balance);
 account2.withdraw(950000);
 console.log("New Balance of Account2 is: " + account2.balance);
+
+//"Class" declaration
+function Account(name, balance, number)
+{
+    this.name = name;
+    this.balance = balance;
+    this.number = number;
+    this.deposit = function(value)
+    {
+        this.balance += value;
+    }
+    this.withdrawal = function(value)
+    {
+        this.balance -= value;
+    }
+}
+
+var account3 = new Account("Ernesto A. Eusebio", 0.0, 0000112);
+
+console.log(account3);
+account3.deposit(1000);
+account3.withdrawal(200);
+console.log(account3);
+
+var courses = [account, account2, account3];
+
+console.log(courses);
+
+/*DOM Objects
+*************************/
+
+//Classes
+console.log(document.body);
+console.log(document.title);
+console.log(document.URL);
+console.log(document.querySelector("#tabs a"));
+console.log(document.querySelectorAll("#tabs a"));
+
+console.log(document.querySelector("#tabs"));
+document.querySelector("#tabs").classList.add("newClass");
+console.log(document.querySelector(".newClass"));
+
+//Attributes
+const BASICSELEMENT = document.querySelector("#tabs a");
+console.log(BASICSELEMENT.attributes)
+
+if(BASICSELEMENT.hasAttribute("class"))
+{
+    console.log("Basics element classes: " + BASICSELEMENT.getAttribute("class"));
+}
+else
+{
+    BASICSELEMENT.setAttribute("class", "simpleTab");
+    console.log("New class added: " + BASICSELEMENT.getAttribute("class"));
+}
+
+console.log(BASICSELEMENT.attributes)
+
+//Adding DOM elements, old school (mass support)
+const HEADER = document.querySelector("header");
+console.log(HEADER);
+
+
+
+
+
+
+
+
 
 
 
