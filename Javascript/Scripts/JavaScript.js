@@ -210,12 +210,93 @@ else
 console.log(BASICSELEMENT.attributes)
 
 //Adding DOM elements, old school (mass support)
-const HEADER = document.querySelector("header");
+const HEADER = document.querySelector("h1");
 console.log(HEADER);
+var subTitle = "About this HTML";
+var titleElement = document.createElement("h2");
+var subTitleText = document.createTextNode(subTitle);
+//console.log(subTitleElement);
+titleElement.appendChild(subTitleText);
+HEADER.parentNode.insertBefore(titleElement, HEADER.nextSibling);
+
+/* Inline CSS
+************************/
+
+//Background-color translates to backgroundColor property
+//This is all inlined CSS
+
+document.querySelector("h1").style.backgroundColor = "darkcyan";
+document.querySelector("h1").style.color = "#0FF";
+
+document.querySelector("h2").style.cssText = "color: #0FF; background-color: gray;";
+
+document.querySelector("p").setAttribute("style", "padding: 1em; font-weight: 700;")
 
 
+/* DOM Events
+*******************************************/
 
+var tabLinks;
+var tabPanels;
 
+window.onload = function()
+{
+  tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+
+  tabPanels = document.getElementById("containers").getElementsByTagName("section");
+
+  //First one selected
+  displayPanel(tabLinks[0]);
+
+  for(var i = 0; i < tabLinks.length; i++)
+  {
+      tabLinks[i].onclick = function()
+      {
+          displayPanel(this);
+          return false;
+      }
+
+      tabLinks[i].onfocus = function()
+      {
+          displayPanel(this);
+          return false;
+      }
+  }
+}
+
+function displayPanel(tabClicked)
+{
+  for(var i = 0; i < tabLinks.length; i++)
+      {
+          if(tabLinks[i] == tabClicked)
+          {
+              tabLinks[i].classList.add("active");
+              tabPanels[i].style.display = "block";
+          }
+          else
+          {
+              tabLinks[i].classList.remove("active");
+              tabPanels[i].style.display = "none";
+          }
+      }
+}
+
+/* Loops
+***************************************/
+
+//For, while and do-while loops are C-based.
+//Break and Continue are also available.
+
+/* Debugging Notes
+************************/
+//1. Console functions are great to debug, check them out.
+//2. Breakpoint debugging can be located in the "Sources" tab on browser tools.
+//3. JSLint and JSHint help clean up code.
+
+/* Useful items
+*************************/
+var arrowFunc = (sum1,sum2) => sum2 * sum1;
+console.log("Result is:",arrowFunc(2,4));
 
 
 
