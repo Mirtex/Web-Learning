@@ -81,8 +81,30 @@ p
     width: auto;
 }
 
+#containers
+{
+    padding-left: 10px;
+    list-style-type: none;
+    border: 1px solid darkcyan;
+    border-radius: 10px;
+    margin: 10px;
+    
+}
+
+#containers h4
+{
+    margin: 10px auto auto auto;
+}
+
+#containers p
+{
+    margin-bottom: 15px;
+    margin-left: 0
+}
+
 footer
 {
+    border-top: 1px solid darkcyan;
     margin-top: 2em;
 }
 
