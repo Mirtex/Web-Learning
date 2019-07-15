@@ -241,9 +241,9 @@ var tabPanels;
 
 window.onload = function()
 {
-  tabLinks = document.getElementById("tabs").getElementsByTagName("li");
+  tabLinks = document.querySelectorAll("#tabs li");
 
-  tabPanels = document.getElementById("containers").getElementsByTagName("section");
+  tabPanels = document.querySelectorAll("#containers section");
 
   //First one selected
   displayPanel(tabLinks[0]);

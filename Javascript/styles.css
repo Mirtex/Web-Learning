@@ -2,6 +2,7 @@ html
 {
     background-color: #AAAAAA;
 }
+
 body
 {
     font: 100% "Bahnschrift Light","Century Gothic",serif;
@@ -11,6 +12,7 @@ body
     border-left: 5px solid darkcyan;
     border-right: 5px solid darkcyan;
 }
+
 h1
 {
     font-family: Calibri, "Courier New", serif;
@@ -59,19 +61,24 @@ p
 
 #tabs
 {
-	height:3em;
-	overflow:visible;
+	height: 3em;
+	overflow: visible;
+    text-align: center;
+}
+
+#tabs > ul
+{
+    padding: 0;
 }
 
 #tabs > ul > li
 {
 	margin:1em 2px 1em;
-	padding:7px 10px;
-	display:block;
-	float: left;
-	border-top-left-radius:10px;
-	border-top-right-radius: 10px;
+	padding: 7px 15px;
+	display:inline-block;
+	border-radius:10px;
 	background: lightcyan;
+    width: auto;
 }
 
 footer
@@ -88,6 +95,6 @@ a
 
 a:hover
 {
-    text-decoration: underline;
+    text-decoration: none;
     color:dodgerblue;
 }
